@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <title>Ilia Kotov Front End Junior</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="cv__header" itemscope itemtype="https://schema.org/Person">
+      <div class="cv__person-info">
+        <h1 itemprop="name">Ilia Kotov</h1>
+        <h2 itemprop="jobTitle">Junior Frontend Developer</h2>
+        <p>Email: <a itemprop="email" href="mailto:iliavkotov@gmail.com">iliavkotov@gmail.com</a></p>
+        <p>Telegram: <a href="https://t.me/IliaCat">#IliaCat</a></p>
+      </div>
+      <img class="cv__photo" src="https://sun9-11.userapi.com/t8flw-XCQvLi68JZIUD_lKsSsTfis1ObaEGchw/vVBQI48TKDY.jpg"
+        alt="Photo of Ilia Kotov">
+    </div>
+    <section>
+      <h3>Skills</h3>
+      <ul>
+        <li>Javascript</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>BEM</li>
+        <li>React, Redux</li>
+        <li>Python, Selenium</li>
+        <li>Git</li>
+      </ul>
+    </section>
+    <section>
+      <h3>Code example</h3>
+      <pre class="cv__code">
+                <code>
+import React from 'react';
+import { Component } from 'react';
+import { withRouter } from 'react-router-dom';
+import { connect } from 'react-redux';
+
+import HeaderComponent from './HeaderComponent';
+import EventPicker from './EventPickerComponent';
+import EventCard from './EventCardComponent';
+import Features from './FeaturesComponent';
+import FooterComponent from './FooterComponent';
+
+const mapStateToProps = state =&#x3E; {
+    return {
+        events: state.events,
+        activeEventId: state.activeEventId
+    }
+}
+
+const mapDispatchToProps = dispatch =&#x3E; (
+    {
+        selectEvent: (activeEventId) =&#x3E; dispatch(selectEvent(activeEventId))
+    }
+)
+
+class Main extends Component {
+    constructor(props) {
+        super(props);
+    }
+    eventSelectHandle(eventId) {
+        console.log("clicked");
+        console.log(eventId);
+        this.setState(
+            { activeEventId: eventId }
+        )
+    }
+    toggleMobileMenu() {
+        const elem = document.getElementById("menu");
+        const className = "on";
+        let cArr = elem.className.split(" ");
+        if (elem.classList.contains("on")) { elem.classList.remove("on"); }
+        else {
+            elem.classList.add("on");
+        }
+    }
+    render() {
+        const activeIvent = this.props.events.filter((event) =&#x3E; { return (event.id == this.props.activeEventId) })[0];
+        return (
+            &#x3C;div&#x3E;
+                &#x3C;HeaderComponent /&#x3E;
+                &#x3C;EventPicker events={this.props.events} activeEventId={this.props.activeEventId} selectEvent={this.props.selectEvent} /&#x3E;
+                &#x3C;EventCard event={activeIvent} /&#x3E;
+                &#x3C;Features /&#x3E;
+                &#x3C;FooterComponent /&#x3E;
+            &#x3C;/div&#x3E;
+        );
+    }
+}
+
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Main));
+                </code>
+            </pre>
+    </section>
+    <section>
+      <h3>Expirience</h3>
+      <ul>
+        <li>Non-profit project: website for Moscow Theatre of Taste: <a
+            href="https://teatrvkusa.herokuapp.com/">https://teatrvkusa.herokuapp.com/</a> (currently under
+          developing)</li>
+        <li>Free software: plugin for Rhino3d: <a href="https://easycut3d.online/">https://easycut3d.online/</a>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h3>Education</h3>
+      <p>
+        2008 Plekhanov Russian University of Economics / Bachelor in Engineering, Bachelor in Economics
+        2014 HTML Academy / HTML Basics course
+        2018 Rice University / Fundamentals of Computing (non-credit on-line specialization course on Coursera
+        platform)
+      </p>
+    </section>
+    <section>
+      <h3>Languages</h3>
+      <ul>
+        <li><b>Russian</b>: native</li>
+        <li><b>English</b>: B2 (Cambridge Certificate from 2019, worked for several years in international
+          company with english-speaking managers)</li>
+        <li><b>Spanish</b>: A2 (studied at school, hadn’t much practice)</li>
+      </ul>
+    </section>
+  </div>
+</body>
+
+</html>
