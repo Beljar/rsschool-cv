@@ -73,3 +73,14 @@ class Main extends Component {
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Main));
 ```
+### Expirience
+Non-profit project: website for Moscow Theatre of Taste: https://teatrvkusa.herokuapp.com/ (currently under developing)\
+Free software: plugin for Rhino3d: https://easycut3d.online/
+### Education
+2008 Plekhanov Russian Univercity of Economics /  Bachelor in Engineering, Bachelor in Economics\
+2014 HTML Academy / HTML Basics course\
+2018 Rice University / Fundamentals of Computing (non-credit on-line specialization course on Coursera platform)  
+### Languages
+* **Russian**: native
+* **English**: B2 (Cambridge Certificate from 2019, worked for several years in international company with english-speaking managers)
+* **Spanish**: A2 (studied at school, hadn't much practice)
