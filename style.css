@@ -19,6 +19,33 @@ a {
 .cv__header a {
   color: white;
 }
+.cv__nav {
+  position: sticky;
+  top: 0;
+  background-color: #3b9c9c;
+  border-top: 2px solid white;
+}
+.nav__menu {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.nav__itm {
+  margin: 0;
+  padding: 0;
+}
+.nav__link {
+  display: block;
+  color: white;
+  width: 150px;
+  padding: 10px 0;
+  text-align: center;
+  text-decoration: none;
+}
+.nav__link:hover {
+  background-color: #66bebe;
+}
 .cv__photo {
   width: 250px;
   height: 250px;
@@ -38,6 +65,21 @@ a {
   padding-left: 30px;
   background-color: #d3d3d3;
 }
+.cv__footer{
+  display: flex;
+  padding: 100px 50px 10px 50px;
+  justify-content: center;
+  background-color: #1c6666;
+}
+.footer__link{
+margin: 30px;
+}
+.footer__rs-img{
+  height: 30px;
+}
+.footer__gh-img{
+  height: 30px;
+}
 section:target {
-  background-color: #FFFF00;
+  background-color: #ffff00;
 }
