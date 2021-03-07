@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+a {
+  color: black;
+}
+.container {
+  max-width: 1024px;
+  margin: auto;
+}
+.cv__header {
+  display: flex;
+  padding: 30px;
+  background-color: #3b9c9c;
+  color: white;
+}
+.cv__header a {
+  color: white;
+}
+.cv__photo {
+  width: 250px;
+  height: 250px;
+  float: right;
+  object-fit: none;
+  object-position: -510px -230px;
+  border-radius: 50%;
+}
+.cv__person-info {
+  width: 75%;
+  float: left;
+}
+.cv__code {
+  max-height: 500px;
+  overflow-y: scroll;
+  padding-top: 10px;
+  padding-left: 30px;
+  background-color: #d3d3d3;
+}
+section:target {
+  background-color: #FFFF00;
+}
