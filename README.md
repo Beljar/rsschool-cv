@@ -1,1 +1,1 @@
-https://beljar.github.io/rsschool-cv/cv
+https://beljar.github.io/rsschool-cv
