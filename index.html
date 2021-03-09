@@ -4,25 +4,22 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
-  <script src="index.js"></script>
   <title>Ilia Kotov Front End Junior</title>
 </head>
 
 <body>
   <div class="container">
     <header class="cv__header" itemscope itemtype="https://schema.org/Person">
-      <div class="cv__person">
-        <div class="cv__person-info">
-          <h1 itemprop="name">Ilia Kotov</h1>
-          <h2 itemprop="jobTitle">Junior Frontend Developer</h2>
-          <ul>
-            <li>Email: <a itemprop="email" href="mailto:iliavkotov@gmail.com">iliavkotov@gmail.com</a></li>
-            <li>Telegram: <a href="https://t.me/IliaCat">#IliaCat</a></li>
-          </ul>
-        </div>
-        <img class="cv__photo" src="https://sun9-11.userapi.com/t8flw-XCQvLi68JZIUD_lKsSsTfis1ObaEGchw/vVBQI48TKDY.jpg"
-          alt="Photo of Ilia Kotov">
+      <div class="cv__person-info">
+        <h1 itemprop="name">Ilia Kotov</h1>
+        <h2 itemprop="jobTitle">Junior Frontend Developer</h2>
+        <p>Email: <a itemprop="email" href="mailto:iliavkotov@gmail.com">iliavkotov@gmail.com</a></p>
+        <p>Telegram: <a href="https://t.me/IliaCat">#IliaCat</a></p>
       </div>
+      <img class="cv__photo" src="https://sun9-11.userapi.com/t8flw-XCQvLi68JZIUD_lKsSsTfis1ObaEGchw/vVBQI48TKDY.jpg"
+        alt="Photo of Ilia Kotov">
+    </header>
+    <main>
       <nav class="cv__nav">
         <ul class="nav__menu">
           <li class="nav__itm"><a class="nav__link" href="#skills">Skills</a></li>
@@ -32,8 +29,6 @@
           <li class="nav__itm"><a class="nav__link" href="#languages">Languages</a></li>
         </ul>
       </nav>
-    </header>
-    <main>
       <section id="skills">
         <h3>Skills</h3>
         <ul>
@@ -144,11 +139,11 @@ export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Main));
 
     <footer class="cv__footer">
       <div>
-        <a class="footer__link" href="https://rs.school/js/"><img class="footer__rs-img" src='./img/rs_school_js.svg'
-            alt="rsschool"></a>
+              <a class="footer__link" href="https://rs.school/js/"><img class="footer__rs-img" src='./img/rs_school_js.svg'
+          alt="rsschool"></a>
         <a class="footer__link" href="https://github.com/Beljar"><img class="footer__gh-img" src='./img/github.png'
-            alt="rsschool"></a>
-      </div>
+    alt="rsschool"></a>
+</div>
     </footer>
   </div>
 </body>

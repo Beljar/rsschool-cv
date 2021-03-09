@@ -12,25 +12,18 @@ a {
 }
 .cv__header {
   display: flex;
-  flex-flow: column;
+  padding: 30px;
   background-color: #3b9c9c;
   color: white;
-}
-.cv__person {
-  display: flex;
-  padding: 30px;
 }
 .cv__header a {
   color: white;
 }
 .cv__nav {
+  position: sticky;
   top: 0;
   background-color: #3b9c9c;
   border-top: 2px solid white;
-}
-.fixed {
-  position: fixed;
-  width: 1024px;
 }
 .nav__menu {
   display: flex;
