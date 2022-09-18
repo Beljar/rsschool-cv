@@ -75,8 +75,8 @@ const mapStateToProps = (state) => ({
 export default connect(mapStateToProps)(Search);
 ```
 ## Experience
-*May 2021 - June 2022*\
 **EPAM Russia**\
+*May 2021 - June 2022*\
 Frontend Developer
 ## Education
 2008 Plekhanov Russian University of Economics /  Bachelor in Engineering, Bachelor in Economics\
