@@ -1,1 +1,1 @@
-# rsschool-cv
+https://beljar.github.io/rsschool-cv/cv
