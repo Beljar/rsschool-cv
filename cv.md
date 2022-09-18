@@ -74,6 +74,10 @@ const mapStateToProps = (state) => ({
 
 export default connect(mapStateToProps)(Search);
 ```
+## Experience
+*May 2021 - June 2022*/
+**EPAM Russia**/
+Frontend Developer
 ## Education
 2008 Plekhanov Russian University of Economics /  Bachelor in Engineering, Bachelor in Economics\
 2018 Rice University / Fundamentals of Computing (non-credit on-line specialization course on Coursera platform)
