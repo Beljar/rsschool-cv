@@ -15,7 +15,7 @@ Telegram: [#IliaCat](https://t.me/IliaCat)
 * Git
 * Webpack
 ## Code example
-```
+```javascript
 import * as React from 'react';
 import { connect } from 'react-redux';
 import { useQuery } from 'src/hooks/useQuery';
